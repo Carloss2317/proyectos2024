@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Usamos flexbox para organizar el contenido */
+}
+
+/* Estilos del nav (barra de navegación lateral) */
+nav {
+    background-color: #000000;
+    color: white;
+    width: 200px; /* Ancho del menú lateral */
+    height: 100vh; /* Altura completa de la ventana */
+    position: fixed; /* Fijo al lado izquierdo */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    justify-content: flex-start; /* Alinea todo el contenido en la parte superior */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea el contenido en la parte superior */
+}
+
+nav ul li a {
+    display: block;
+    width: 100%; /* Ocupar el ancho completo del menú */
+    text-align: center; /* Centrar el texto horizontalmente */
+    padding: 14px 0;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #640b0b;
+}
+
+/* Submenú para Semana */
+nav ul li ul {
+    display: none;
+    background-color: #444;
+    width: 100%;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li a {
+    padding: 10px 0;
+}
+
+/* Ajustamos el contenido principal para que no esté debajo del menú */
+section {
+    margin-left: 220px; /* Mueve el contenido a la derecha del menú */
+    padding: 2rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en varias líneas */
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.portfolio-item {
+    background-color: #f9f9f9; /* Color de fondo para los elementos del portafolio */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 30%; /* Ancho de cada elemento (ajusta según tu diseño) */
+    margin: 10px; /* Espaciado entre elementos */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centrar texto */
+    height: 350px; /* Altura fija (ajusta según tu diseño) */
+}
+.portfolio-item img {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    width: 300px; /* Establece un ancho máximo (ajusta según sea necesario) */
+    height: 200px; /* Establece una altura máxima (ajusta según sea necesario) */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 5px; /* Bordes redondeados para imágenes */
+}
+
+.portfolio-item h2 {
+    margin: 10px 0; /* Espaciado arriba y abajo del título */
+}
+
+.portfolio-item p {
+    font-size: 14px; /* Tamaño de fuente para la descripción */
+}
+
+.portfolio-item a {
+    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
+    margin-top: 10px; /* Espaciado superior del enlace */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    background-color: #640b0b; /* Color de fondo para el enlace */
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+.portfolio-item a:hover {
+    background-color: #520909; /* Color de fondo al pasar el mouse */
+}
