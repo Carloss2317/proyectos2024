@@ -1,0 +1,83 @@
+/* Reset básico para asegurarnos de que no haya márgenes ni paddings inesperados */
+* {
+    box-sizing: border-box; /* Establece el box model */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente general */
+    background-color: #f4f4f4; /* Color de fondo */
+    color: #333; /* Color de texto */
+    padding: 20px; /* Espaciado en el cuerpo */
+}
+
+/* Estilo del título principal */
+h1 {
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio inferior */
+    color: #640b0b; /* Color del título */
+}
+
+/* Contenedor de trabajos */
+.trabajos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+}
+
+/* Estilos de cada trabajo */
+.trabajo-item {
+    background-color: #ffffff; /* Color de fondo de los trabajos */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    width: 30%; /* Ancho de cada elemento */
+    margin: 10px; /* Espaciado entre elementos */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centrar texto */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+/* Efecto al pasar el mouse sobre el trabajo */
+.trabajo-item:hover {
+    transform: translateY(-5px); /* Elevar el trabajo al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar sombra */
+}
+
+/* Estilo del título de cada trabajo */
+.trabajo-item h2 {
+    margin-bottom: 10px; /* Espaciado abajo del título */
+    color: #640b0b; /* Color del título de los trabajos */
+}
+
+/* Estilo del enlace */
+.trabajo-item a {
+    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
+    margin-top: 10px; /* Espaciado superior del enlace */
+    padding: 10px 15px; /* Espaciado interno del enlace */
+    background-color: #640b0b; /* Color de fondo para el enlace */
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición para el color de fondo */
+}
+
+/* Efecto al pasar el mouse sobre el enlace */
+.trabajo-item a:hover {
+    background-color: #520909; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo del enlace para volver a la página principal */
+.volver {
+    display: block; /* Hacer que el enlace ocupe toda la línea */
+    text-align: center; /* Centrar el texto del enlace */
+    margin-top: 20px; /* Espacio superior */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #640b0b; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.volver:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
