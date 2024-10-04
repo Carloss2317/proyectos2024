@@ -9,7 +9,7 @@ body {
 nav {
     background-color: #000000;
     color: white;
-    width: 200px; /* Ancho del menú lateral */
+    width: 300px; /* Ancho del menú lateral */
     height: 100vh; /* Altura completa de la ventana */
     position: fixed; /* Fijo al lado izquierdo */
     top: 0;
