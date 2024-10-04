@@ -133,3 +133,38 @@ section {
 .portfolio-item a:hover {
     background-color: #520909; /* Color de fondo al pasar el mouse */
 }
+.trabajos {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
+    justify-content: space-around; /* Espaciado uniforme entre los elementos */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.trabajo-item {
+    background-color: #f9f9f9; /* Color de fondo para los elementos de trabajo */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    width: 30%; /* Ancho de cada elemento */
+    margin: 10px; /* Espaciado entre elementos */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    text-align: center; /* Centrar texto */
+}
+
+.trabajo-item h2 {
+    margin: 10px 0; /* Espaciado arriba y abajo del título */
+}
+
+.trabajo-item a {
+    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
+    margin-top: 10px; /* Espaciado superior del enlace */
+    padding: 8px 12px; /* Espaciado interno del enlace */
+    background-color: #640b0b; /* Color de fondo para el enlace */
+    color: white; /* Color del texto del enlace */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 3px; /* Bordes redondeados */
+}
+
+.trabajo-item a:hover {
+    background-color: #520909; /* Color de fondo al pasar el mouse */
+}
