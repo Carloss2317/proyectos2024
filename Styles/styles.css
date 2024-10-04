@@ -117,3 +117,58 @@ section {
 .portfolio-item a:hover {
     background-color: #520909; /* Color de fondo al pasar el mouse */
 }
+/* Contenedor del slider */
+.semana-slider {
+    overflow-x: auto; /* Permite el desplazamiento horizontal */
+    white-space: nowrap; /* Evita que los elementos se rompan en varias líneas */
+    width: 100%; /* Asegura que ocupe el ancho completo */
+    padding: 10px 0; /* Espaciado interno */
+}
+
+/* Estilos para los enlaces dentro del slider */
+.semana-slider ul {
+    display: inline-block; /* Permite que los elementos se alineen horizontalmente */
+    padding: 0;
+    margin: 0;
+}
+
+.semana-slider li {
+    display: inline-block; /* Hace que las semanas estén en una línea horizontal */
+    margin-right: 10px; /* Espaciado entre las semanas */
+}
+
+.semana-slider li a {
+    padding: 10px 20px; /* Espaciado interno del enlace */
+    background-color: #640b0b; /* Color de fondo del enlace */
+    color: white; /* Color de texto */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quita el subrayado */
+    display: inline-block; /* Asegura que los enlaces sean "bloques" dentro de la línea */
+}
+
+.semana-slider li a:hover {
+    background-color: #520909; /* Color de fondo al pasar el mouse */
+}
+
+/* Scrollbar personalizado */
+.semana-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.semana-slider::-webkit-scrollbar-thumb {
+    background-color: #444; /* Color de la barra de desplazamiento */
+    border-radius: 4px;
+}
+
+
+
+@media (max-width: 768px) {
+    .semana-slider {
+        padding: 5px 0; /* Reduce el espaciado interno en dispositivos pequeños */
+    }
+    
+    .semana-slider li a {
+        padding: 8px 12px; /* Ajusta el tamaño de los enlaces en pantallas pequeñas */
+        font-size: 14px; /* Reduce el tamaño de la fuente */
+    }
+}
