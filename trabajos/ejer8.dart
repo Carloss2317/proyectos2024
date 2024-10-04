@@ -1,9 +1,8 @@
-import 'dart:io';
 import 'dart:math';
 
 void main() {
-  print('Ingresa un número para verificar si es un número de Armstrong:');
-  int numero = int.parse(stdin.readLineSync()!);
+  // Definimos el número para verificar si es un número de Armstrong
+  int numero = 153; // Cambia este valor según lo desees
   int suma = 0;
   int temp = numero;
   int n = numero.toString().length;

@@ -1,5 +1,3 @@
-import 'dart:io';
-
 bool esPrimo(int numero) {
   if (numero < 2) return false;
   for (int i = 2; i <= numero ~/ 2; i++) {
@@ -9,10 +7,9 @@ bool esPrimo(int numero) {
 }
 
 void main() {
-  print('Ingresa el primer número:');
-  int inicio = int.parse(stdin.readLineSync()!);
-  print('Ingresa el segundo número:');
-  int fin = int.parse(stdin.readLineSync()!);
+  // Definimos los números de inicio y fin en lugar de usar stdin
+  int inicio = 10; // Cambia este valor según lo desees
+  int fin = 50; // Cambia este valor según lo desees
 
   int suma = 0;
   for (int i = inicio; i <= fin; i++) {

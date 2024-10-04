@@ -1,5 +1,3 @@
-import 'dart:io';
-
 BigInt factorial(int n) {
   BigInt resultado = BigInt.one;
   for (int i = 2; i <= n; i++) {
@@ -9,8 +7,8 @@ BigInt factorial(int n) {
 }
 
 void main() {
-  print('Ingresa un número para calcular su factorial:');
-  int n = int.parse(stdin.readLineSync()!);
+  // Definimos un número fijo en lugar de usar stdin
+  int n = 100; // Cambia este valor según lo desees
   
   print('El factorial de $n es: ${factorial(n)}');
 }

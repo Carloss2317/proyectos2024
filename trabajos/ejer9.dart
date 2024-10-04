@@ -1,10 +1,7 @@
-import 'dart:io';
-
 void main() {
-  print('Ingresa la base:');
-  int base = int.parse(stdin.readLineSync()!);
-  print('Ingresa el exponente:');
-  int exponente = int.parse(stdin.readLineSync()!);
+  // Definimos la base y el exponente
+  int base = 2; // Cambia este valor según lo desees
+  int exponente = 3; // Cambia este valor según lo desees
 
   int resultado = 1;
 

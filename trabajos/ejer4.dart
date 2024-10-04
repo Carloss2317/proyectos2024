@@ -1,8 +1,6 @@
-import 'dart:io';
-
 void main() {
-  print('Ingresa un número entero:');
-  int numero = int.parse(stdin.readLineSync()!);
+  // Definimos un número fijo en lugar de usar stdin
+  int numero = 12345; // Cambia este valor según lo desees
   int invertido = 0;
 
   while (numero > 0) {

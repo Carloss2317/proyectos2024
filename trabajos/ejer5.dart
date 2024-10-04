@@ -1,33 +1,31 @@
-import 'dart:io';
-
 void main() {
-  print('Ingresa el tamaño de las matrices (N):');
-  int n = int.parse(stdin.readLineSync()!);
+  // Definimos el tamaño de las matrices (N)
+  int n = 3; // Cambia este valor según lo desees
 
-  List<List<int>> matrizA = List.generate(n, (_) => List.filled(n, 0));
-  List<List<int>> matrizB = List.generate(n, (_) => List.filled(n, 0));
+  // Creamos matrices A y B con valores predefinidos
+  List<List<int>> matrizA = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+  ];
+
+  List<List<int>> matrizB = [
+    [9, 8, 7],
+    [6, 5, 4],
+    [3, 2, 1]
+  ];
+
+  // Matriz para almacenar la suma
   List<List<int>> suma = List.generate(n, (_) => List.filled(n, 0));
 
-  print('Ingresa la matriz A:');
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      matrizA[i][j] = int.parse(stdin.readLineSync()!);
-    }
-  }
-
-  print('Ingresa la matriz B:');
-  for (int i = 0; i < n; i++) {
-    for (int j = 0; j < n; j++) {
-      matrizB[i][j] = int.parse(stdin.readLineSync()!);
-    }
-  }
-
+  // Sumar las matrices
   for (int i = 0; i < n; i++) {
     for (int j = 0; j < n; j++) {
       suma[i][j] = matrizA[i][j] + matrizB[i][j];
     }
   }
 
+  // Imprimir la suma de las matrices
   print('La suma de las matrices es:');
   for (var fila in suma) {
     print(fila);
