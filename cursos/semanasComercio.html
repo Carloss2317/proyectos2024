@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semanas del Curso</title>
+    <link rel="stylesheet" href="Styles/styles.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Semanas del Curso</h1>
+        <button onclick="window.history.back()">Volver</button> <!-- Botón para volver -->
+    </header>
+
+    <section class="semanas-grid">
+        <!-- Las semanas se generarán aquí -->
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Obtener el parámetro del curso de la URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const cursoId = urlParams.get('curso');
+
+            // Obtener la sección de semanas
+            const semanasGrid = document.querySelector('.semanas-grid');
+
+            // Crear las semanas en cuadros
+            for (let i = 1; i <= 16; i++) {
+                const semanaDiv = document.createElement('div');
+                semanaDiv.className = 'semana-cuadro';
+                semanaDiv.innerText = `Semana ${i}`;
+                semanasGrid.appendChild(semanaDiv);
+            }
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+        }
+        .semanas-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Cuatro columnas */
+            gap: 20px; /* Espacio entre cuadros */
+            padding: 20px;
+        }
+        .semana-cuadro {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+</html>
