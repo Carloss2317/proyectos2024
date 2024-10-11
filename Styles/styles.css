@@ -133,38 +133,56 @@ section {
 .portfolio-item a:hover {
     background-color: #520909; /* Color de fondo al pasar el mouse */
 }
-.trabajos {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias líneas */
-    justify-content: space-around; /* Espaciado uniforme entre los elementos */
-    margin-top: 20px; /* Espacio superior */
+/* Estilos del menú hamburguesa */
+.menu-hamburguesa {
+    width: 30px;
+    cursor: pointer;
+    margin: 20px;
 }
 
-.trabajo-item {
-    background-color: #f9f9f9; /* Color de fondo para los elementos de trabajo */
-    border: 1px solid #ddd; /* Borde sutil */
-    border-radius: 5px; /* Bordes redondeados */
-    width: 30%; /* Ancho de cada elemento */
-    margin: 10px; /* Espaciado entre elementos */
-    padding: 10px; /* Espaciado interno */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    text-align: center; /* Centrar texto */
+.menu-hamburguesa .linea {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
 }
 
-.trabajo-item h2 {
-    margin: 10px 0; /* Espaciado arriba y abajo del título */
+/* Ocultar el menú lateral inicialmente */
+#menuLateral {
+    width: 250px;
+    height: 100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s ease;
 }
 
-.trabajo-item a {
-    display: inline-block; /* Hacer que el enlace se comporte como un bloque */
-    margin-top: 10px; /* Espaciado superior del enlace */
-    padding: 8px 12px; /* Espaciado interno del enlace */
-    background-color: #640b0b; /* Color de fondo para el enlace */
-    color: white; /* Color del texto del enlace */
-    text-decoration: none; /* Sin subrayado */
-    border-radius: 3px; /* Bordes redondeados */
+#menuLateral ul {
+    list-style: none;
+    padding: 0;
 }
 
-.trabajo-item a:hover {
-    background-color: #520909; /* Color de fondo al pasar el mouse */
+#menuLateral ul li {
+    padding: 15px;
+    text-align: left;
+}
+
+#menuLateral ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+/* Mostrar el menú lateral cuando esté activo */
+#menuLateral.active {
+    left: 0;
+}
+/* Estilo para las imágenes de los servicios */
+.servicio-item img {
+    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto original */
+    max-width: 200px; /* Establece un ancho máximo */
+    max-height: 150px; /* Establece una altura máxima */
+    object-fit: cover; /* Cubre el área sin distorsionar la imagen */
 }

@@ -24,3 +24,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+// script.js
+
+// Seleccionamos el botón y el menú lateral
+const menuBtn = document.getElementById('menuBtn');
+const menuLateral = document.getElementById('menuLateral');
+
+// Agregamos un evento de clic para mostrar/ocultar el menú
+menuBtn.addEventListener('click', () => {
+    menuLateral.classList.toggle('active');
+});
